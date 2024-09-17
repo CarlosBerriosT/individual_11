@@ -23,7 +23,7 @@ public class FragmentoRadio extends Fragment {
 
         radioGroup.setOnCheckedChangeListener((group, checkedId) -> {
             RadioButton selectedRadioButton = view.findViewById(checkedId);
-            String selectedText = (selectedRadioButton != null) ? selectedRadioButton.getText() + " seleccionada" : "Ninguna opción seleccionada";
+            String selectedText = (selectedRadioButton != null) ? selectedRadioButton.getText() + " " : "Ninguna opción seleccionada";
             textView.setText(selectedText);
         });
 
